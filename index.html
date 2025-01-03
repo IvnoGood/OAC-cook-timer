@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minutor App</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="#" class="active">&#127789; Hot Dog</a>
+        <a href="#"> &#127828; Burger</a>
+        <a href="#">&#127829; Pizza</a>
+        <a href="#">&#127790; Mexican</a>
+        <a href="#">&#129386; Sandwich</a>
+        <a href="#">&#127831; Fried Chicken</a>
+        <a href="#">&#127846; Ice Cream</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="cards">
+        <div class="minutor">
+          <h1>Minutor 1</h1>
+          <div class="timer-setup">
+            <label for="minutes">Set Minutes:</label>
+            <select name="cook" id="cook1" class="timer-setup">
+              <option value="HotDogB">HotDog Bread</option>
+              <option value="HotDogS">HotDog Sausage</option>
+            </select>
+            <button id="start-button1">Start Timer</button>
+          </div>
+          <div class="timer-display">
+            <h2 id="countdown1">00:00</h2>
+          </div>
+        </div>
+
+        <div class="minutor">
+          <h1>Minutor 2</h1>
+          <div class="timer-setup">
+            <label for="minutes">Set Minutes:</label>
+            <select name="cook" id="cook2" class="timer-setup">
+              <option value="HotDogB">HotDog Bread</option>
+              <option value="HotDogS">HotDog Sausage</option>
+            </select>
+            <button id="start-button2">Start Timer</button>
+          </div>
+          <div class="timer-display">
+            <h2 id="countdown2">00:00</h2>
+          </div>
+        </div>
+
+        <div class="minutor">
+          <h1>Minutor 3</h1>
+          <div class="timer-setup">
+            <label for="minutes">Set Minutes:</label>
+            <select name="cook" id="cook3" class="timer-setup">
+              <option value="HotDogB">HotDog Bread</option>
+              <option value="HotDogS">HotDog Sausage</option>
+            </select>
+            <button id="start-button3">Start Timer</button>
+          </div>
+          <div class="timer-display">
+            <h2 id="countdown3">00:00</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <audio src="./buzz-sound.mp3" id="audio">
+      <source src="./buzz-sound.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="script.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
