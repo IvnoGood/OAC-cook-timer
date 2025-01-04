@@ -156,10 +156,6 @@ a:active::after {
     height: 51px;
 }
 
-.active {
-    order: 1 !important;
-}
-
 @media screen and (max-width: 515px) {
 
     main,
