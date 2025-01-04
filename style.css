@@ -12,12 +12,13 @@ body {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: white;
     background-repeat: no-repeat;
-
+    min-height: 100vh;
+    background-attachment: fixed;
     overflow-y: hidden;
 }
 
 main {
-    height: 94.5vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -106,14 +107,6 @@ button:hover {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* .icon {
-    height: fit-content;
-    margin-top: auto;
-    padding: 0 !important;
-    font-size: 32px !important;
-
-} */
-
 .topnav a {
     float: left;
     display: block;
@@ -126,12 +119,22 @@ button:hover {
 
 .topnav a:hover {
     background-color: #4e0c96;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
+}
+
+a:hover::after,
+a:active::after {
+    content: "";
+    display: block;
+    background-color: white;
+    height: 1px;
+    width: 164px;
+    bottom: -32px;
 }
 
 .topnav a.active {
     background-color: #6a11cb;
-    border-bottom: 1px solid rgb(221, 221, 221);
+    /* border-bottom: 1px solid rgb(221, 221, 221); */
     color: white;
 }
 
@@ -139,12 +142,30 @@ button:hover {
     display: none;
 }
 
+.icon {
+    background-color: transparent !important;
+}
+
+.icon::after,
+.void::after {
+    content: none !important;
+}
+
+.void {
+    display: none !important;
+    height: 51px;
+}
+
+.active {
+    order: 1 !important;
+}
+
 @media screen and (max-width: 515px) {
 
     main,
     body,
     html {
-        height: auto;
+        height: 100vh;
     }
 
     body {
@@ -152,11 +173,17 @@ button:hover {
     }
 }
 
-/* @media screen and (max-width: 976px) {
+@media screen and (max-height: 450px) {
+    body {
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 976px) {
     h1 {
         display: none;
     }
-} */
+}
 
 @media screen and (max-width: 887px) {
     .topnav a:not(:first-child) {
