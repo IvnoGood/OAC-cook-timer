@@ -5,12 +5,12 @@ body {
     padding: 0;
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: white;
-    overflow-y: hidden;
     background-repeat: no-repeat;
 }
 
 main {
     height: 100vh;
+    position: relative;
 }
 
 .cards {
@@ -22,7 +22,7 @@ main {
     padding: 10px;
     margin-bottom: auto;
     margin-top: auto;
-    height: 100%;
+    height: ;
     align-content: flex-start;
 }
 
@@ -129,11 +129,17 @@ button:hover {
     display: none;
 }
 
-@media screen and (max-width: 976px) {
+@media screen and (max-width: 515px) {
+    main {
+        height: auto;
+    }
+}
+
+/* @media screen and (max-width: 976px) {
     h1 {
         display: none;
     }
-}
+} */
 
 @media screen and (max-width: 887px) {
     .topnav a:not(:first-child) {
