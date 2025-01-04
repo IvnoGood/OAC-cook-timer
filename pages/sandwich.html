@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OAC cook timer</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <link
@@ -15,11 +15,11 @@
   <body>
     <header>
       <div class="topnav" id="myTopnav">
-        <a href="/index.html" class="active">&#127789; Hot Dog</a>
-        <a href="pages/burger.html"> &#127828; Burger</a>
+        <a href="/index.html">&#127789; Hot Dog</a>
+        <a href="/pages/burger.html"> &#127828; Burger</a>
         <a href="/pages/pizza.html">&#127829; Pizza</a>
         <a href="/pages/mexican.html">&#127790; Mexican</a>
-        <a href="/pages/sandwich.html">&#129386; Sandwich</a>
+        <a href="/pages/sandwich.html" class="active">&#129386; Sandwich</a>
         <a href="/pages/chicken.html">&#127831; Fried Chicken</a>
         <a href="/pages/ice-cream.html">&#127846; Ice Cream</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -35,8 +35,12 @@
           <div class="timer-setup">
             <label for="minutes">Food: </label>
             <select name="cook" id="cook1" class="timer-setup">
-              <option value="HotDogB">HotDog Bread</option>
-              <option value="HotDogS">HotDog Sausage</option>
+              <option value="bread">bread</option>
+              <option value="TunaE">Entire Tuna</option>
+              <option value="TunaP">Piece of Tuna</option>
+              <option value="Ham">Ham</option>
+              <option value="Bacon">Bacon</option>
+              <option value="Chicken">Chicken</option>
             </select>
           </div>
           <button class="start-button" id="start-button1">Start Timer</button>
@@ -49,8 +53,12 @@
           <div class="timer-setup">
             <label for="minutes">Food: </label>
             <select name="cook" id="cook2" class="timer-setup">
-              <option value="HotDogB">HotDog Bread</option>
-              <option value="HotDogS">HotDog Sausage</option>
+              <option value="bread">bread</option>
+              <option value="TunaE">Entire Tuna</option>
+              <option value="TunaP">Piece of Tuna</option>
+              <option value="Ham">Ham</option>
+              <option value="Bacon">Bacon</option>
+              <option value="Chicken">Chicken</option>
             </select>
           </div>
           <button class="start-button" id="start-button2">Start Timer</button>
@@ -64,8 +72,12 @@
           <div class="timer-setup">
             <label for="minutes">Food: </label>
             <select name="cook" id="cook3" class="timer-setup">
-              <option value="HotDogB">HotDog Bread</option>
-              <option value="HotDogS">HotDog Sausage</option>
+              <option value="bread">bread</option>
+              <option value="TunaE">Entire Tuna</option>
+              <option value="TunaP">Piece of Tuna</option>
+              <option value="Ham">Ham</option>
+              <option value="Bacon">Bacon</option>
+              <option value="Chicken">Chicken</option>
             </select>
           </div>
           <button class="start-button" id="start-button3">Start Timer</button>
@@ -76,11 +88,11 @@
       </div>
     </main>
 
-    <audio src="./buzz-sound.mp3" id="audio">
-      <source src="./buzz-sound.mp3" type="audio/mp3" />
+    <audio src="../buzz-sound.mp3" id="audio">
+      <source src="../buzz-sound.mp3" type="audio/mp3" />
     </audio>
 
-    <script src="script.js"></script>
+    <script src="../script.js" type=""></script>
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");

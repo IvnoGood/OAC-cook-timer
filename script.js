@@ -2,8 +2,39 @@
 
 // Custom times for each ingredient (in seconds)
 const customTimes = {
-  HotDogB: 11, // 5 minutes
-  HotDogS: 11, // 2 minutes
+  //Tacos
+  HotDogB: 11,
+  HotDogS: 11,
+
+  //Burgers
+  HbBread: 11,
+  Steak: 7,
+  Bacon: 5, //5.42
+
+  //Pizza
+  Pizza: 12,
+
+  //Mexican
+  Beef: 13, //13.69
+  Chicken: 10, //10.40
+  Tortilla: 5, //5.66
+  Taco: 3, //3.62
+
+  //Sandwich
+  bread: 5, //5.90
+  TunaE: 10, //10.22
+  Ham: 8, //8.34
+  Bacon: 5, //5.42
+  Chicken: 10, //10.40
+  TunaP: 6, //6.36
+
+  //Chicken
+  Nugget: 9, //9.73
+  HbBread: 11,
+  Fries: 10, //10.29  
+  Patty: 15, //15.55
+
+  //Ice-Cream
 };
 
 let countdownIntervals = {}; // Store intervals for each timer

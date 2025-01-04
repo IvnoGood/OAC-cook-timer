@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OAC cook timer</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="/index.html">&#127789; Hot Dog</a>
+        <a href="/pages/burger.html"> &#127828; Burger</a>
+        <a href="/pages/pizza.html">&#127829; Pizza</a>
+        <a href="/pages/mexican.html">&#127790; Mexican</a>
+        <a href="/pages/sandwich.html">&#129386; Sandwich</a>
+        <a href="/pages/chicken.html">&#127831; Fried Chicken</a>
+        <a href="/pages/ice-cream.html" class="active">&#127846; Ice Cream</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <h1>It seems that there's nothing to cook &#129300;</h1>
+    </main>
+
+    <audio src="../buzz-sound.mp3" id="audio">
+      <source src="../buzz-sound.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="../script.js" type=""></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
