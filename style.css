@@ -109,27 +109,36 @@ button:hover {
 
 .topnav a {
     float: left;
+    width: fit-content;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    transition: width 0.5s, background-color 0.5s;
 }
 
 .topnav a:hover {
     background-color: #4e0c96;
-    /* border-bottom: 1px solid white; */
 }
 
-a:hover::after,
-a:active::after {
+a::after {
     content: "";
     display: block;
     background-color: white;
     height: 1px;
-    width: 164px;
     bottom: -32px;
+    transform: scale(0);
+    width: 60px;
+    transition: transform 0.5s, width 0.5s;
+}
+
+a:hover::after,
+a:active::after {
+    transform: scale(1);
+    width: 164px;
+
 }
 
 .topnav a.active {
